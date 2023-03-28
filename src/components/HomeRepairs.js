@@ -3,7 +3,7 @@ import "./HomeRepairs.css"
 function HomeRepairs(){
     return (
         <div className="imageContainer">
-            <image className="image"src={remodel}></image>
+            <img className="image" src={remodel}/>
         </div>
     )
 }
