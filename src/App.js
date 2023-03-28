@@ -3,6 +3,7 @@ import React, { useState }from 'react';
 import './App.css';
 import Header from "./components/Header"
 import Projects from './components/Projects';
+import About from "./components/About"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Projects
         clickedLink={clickedLink}
         />
+        <About/>
       </div>
   );
 }

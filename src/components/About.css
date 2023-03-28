@@ -1,0 +1,26 @@
+.bio{
+    display:flex;
+    flex-direction: column;
+}
+.titleHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.titleHeader h3{
+    background-color: aqua;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+.bioParagraph{
+    text-indent: 40px;
+    margin: 10px;
+    padding:5px;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    box-shadow: 5px 5px 5px black;
+}
+.bioParagraph p{
+    background-color: cornflowerblue;
+}
