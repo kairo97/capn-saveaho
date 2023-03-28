@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css"
 import Nav from "./Nav.js"
 
-function Header(clickedLink, setClickedLink) {
+function Header({ setClickedLink}) {
     return(
         <header>
             <div className="titleBox">
@@ -11,7 +11,6 @@ function Header(clickedLink, setClickedLink) {
             </h1>
             </div>
             <Nav 
-            clickedLink={clickedLink}
             setClickedLink={setClickedLink}/>
         </header>
     )

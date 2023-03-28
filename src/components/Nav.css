@@ -14,4 +14,5 @@
 .navBar li{
     margin: 5px;
     align-items: center;
+    cursor: pointer;
 }
