@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css"
 import Nav from "./Nav.js"
 
-function Header() {
+function Header(clickedLink, setClickedLink) {
     return(
         <header>
             <div className="titleBox">
@@ -10,7 +10,9 @@ function Header() {
                 Cap'n Saveaho 
             </h1>
             </div>
-            <Nav/>
+            <Nav 
+            clickedLink={clickedLink}
+            setClickedLink={setClickedLink}/>
         </header>
     )
 }

@@ -1,16 +1,22 @@
 
-import React from 'react';
+import React, { useState }from 'react';
 import './App.css';
 import Header from "./components/Header"
 import Projects from './components/Projects';
 
 function App() {
-
-
+  [clickedLink, setClickedLink] = useState("")
+  
   return (
       <div className='page'>
-        <Header/>
-        <Projects/>
+        <Header 
+        clickedLink={clickedLink}
+        setClickedLink={setClickedLink}
+         />
+        <Projects
+        clickedLink={clickedLink}
+        setClickedLink={setClickedLink}
+        />
       </div>
   );
 }
