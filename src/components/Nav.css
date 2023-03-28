@@ -1,0 +1,17 @@
+.navContainer{
+    border:solid red 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.navBar li{
+    margin: 5px;
+    align-items: center;
+}
