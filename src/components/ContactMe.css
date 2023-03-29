@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background-color: cornflowerblue;
+    background-color: #c5d8d1;
     margin:10px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black
 }
 .contactHeaderContainer{
-    background-color: cornflowerblue;
+    background-color: #c5d8d1;
     width:40%;
     text-align: center;
     padding:5px;
@@ -21,32 +21,33 @@
     box-shadow: 5px 5px 5px black;
 }
 .contactInfo{
-    border: solid  white 1px;
+    background-color: #c5d8d1;
     width: 40%;
     padding:5px;
     margin:5px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
 }
 .contactInfo ul {
     list-style: none;
+    background-color: #c5d8d1;
 }
 .contactInfo li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid white  1px;
     border-radius: 15px;
+    border:solid white 1px;
     padding: 4px;
     margin: 5px;
-    background-color: cornflowerblue;
+    margin-top:10px;
+    background-color:rgba(104, 104, 186, 0.676);
+    box-shadow: 5px 5px 5px black;
 }
 .contactInfo a {
-    background-color: cornflowerblue;
+    background-color:rgba(104, 104, 186, 0.16);
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
 .contactInfo a:hover{
-    color:blueviolet;
+    color: white;
 }

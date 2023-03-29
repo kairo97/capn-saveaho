@@ -10,7 +10,6 @@
     width: 100%;
     justify-content: space-around;
     padding: 5px;
-    border-bottom: solid 2px chartreuse;
 }
 .navBar li{
     margin: 5px;
@@ -19,5 +18,5 @@
     box-shadow: 5px 5px 5px black;
     align-items: center;
     cursor: pointer;
-    background-color: cornflowerblue;
+    background-color: #c5d8d1;
 }
