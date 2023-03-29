@@ -21,3 +21,8 @@
     cursor: pointer;
     background-color: #c5d8d1;
 }
+.navItem:hover{
+    background-color: #f4edea;
+    color: #2e1c2b;
+    box-shadow: 5px 5px 5px #f4d1ae;
+}
