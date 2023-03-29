@@ -1,7 +1,7 @@
 import "./Nav.css"
 
 function Nav({setClickedLink}) {
-    
+
     return (
         <div className="navContainer">
             <ul className="navBar">

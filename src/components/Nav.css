@@ -15,7 +15,8 @@
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    border: solid white 1px;
+    box-shadow: 5px 5px 5px #c5d8d1;
     align-items: center;
     cursor: pointer;
     background-color: #c5d8d1;

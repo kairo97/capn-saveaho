@@ -13,14 +13,24 @@ function App() {
   
   return (
       <div className='page'>
+        <div className="headerContainer">
         <Header 
         setClickedLink={setClickedLink}
-         />
+        />
+        </div>
+        <div className='midGrid'>
+        <div className="projectContainer">
         <Projects
         clickedLink={clickedLink}
         />
+        </div>
+        <div className="aboutContainer">
         <About/>
+        </div>
+        </div>
+        <div className="contactContainer">
         <ContactMe/>
+        </div>
         <Footer/>
       </div>
   );
