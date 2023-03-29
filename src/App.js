@@ -4,6 +4,8 @@ import './App.css';
 import Header from "./components/Header"
 import Projects from './components/Projects';
 import About from "./components/About"
+import ContactMe from './components/ContactMe';
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         clickedLink={clickedLink}
         />
         <About/>
+        <ContactMe/>
+        <Footer/>
       </div>
   );
 }
