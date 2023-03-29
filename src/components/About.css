@@ -3,24 +3,30 @@
    grid-template-rows: 10% 90%;
 }
 .titleHeader{
-    width:40%;
+    width:30%;
     justify-self: center;
+
 }
 .titleHeader h3{
     justify-self: center;
-    width: 35%;
+    width: 50%;
     background-color: #c5d8d1;
+    margin-top: 5px;
     padding:5px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #c5d8d1;
 }
 .bioParagraph{
+    border:solid white 1px;
     text-indent: 40px;
     margin: 10px;
+    margin-top: 20px;
     padding:5px;
+    width:80%;
     border-radius: 15px;
     background-color: #c5d8d1;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 3px 3px 3px #c5d8d1;
+    justify-self: center;
 }
 .bioParagraph p{
     background-color: #c5d8d1;
