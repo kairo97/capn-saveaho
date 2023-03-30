@@ -5,4 +5,7 @@
 }
 .pageTitle{
     color:white;
+    border-bottom: solid 1px white;
+    width:100%;
+    text-align: center;
 }

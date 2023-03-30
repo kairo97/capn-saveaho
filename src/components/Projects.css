@@ -39,7 +39,10 @@
     grid-template-rows: 95% 5%;
 }
 .imageTitle{
+    margin: 5px;
+    padding:3px;
     background-color: #bebebe;
     text-align: center;
-    border-radius: 5px;;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px whitesmoke;
 }
