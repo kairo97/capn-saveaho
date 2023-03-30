@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css"
-import Nav from "./Nav.js"
+
 
 function Header({ setClickedLink}) {
     return(
@@ -10,8 +10,7 @@ function Header({ setClickedLink}) {
                 Cap'n Saveaho 
             </h1>
             </div>
-            <Nav 
-            setClickedLink={setClickedLink}/>
+       
         </header>
     )
 }

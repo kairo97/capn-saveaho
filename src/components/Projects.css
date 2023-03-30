@@ -1,0 +1,26 @@
+.imageContainer{
+    display: grid;
+    grid-template-columns: 5% 85% 5% 5%;
+    justify-content: center;
+}
+
+.image{
+    justify-self: center;
+    border-radius: 15px;
+    margin: 10px;
+    height:470px;
+    width:80%;
+    border: solid white 1px;
+    box-shadow: 5px 5px 5px #bebebe;
+}
+.btn{
+    background-color: #bebebe;
+    height:fit-content;
+    width:fit-content;
+    padding:2px;
+    border-radius: 5px;    
+}
+.imageAndTitle{
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
