@@ -13,14 +13,33 @@
     border: solid white 1px;
     box-shadow: 5px 5px 5px #bebebe;
 }
+.btnContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn{
     background-color: #bebebe;
     height:fit-content;
     width:fit-content;
-    padding:2px;
-    border-radius: 5px;    
+    padding:5px;
+    border-radius: 10px;
+    border: 1px solid black;   
+    box-shadow: 2px 2px 2px #bebebe; 
+    cursor: pointer;
+}
+.btn:hover{
+    color: #c5d8d1;
+    background-color: #2e1c2b;
+    border:1px solid white;
+    box-shadow: 2px 2px 2px white;
 }
 .imageAndTitle{
     display: grid;
     grid-template-rows: 95% 5%;
+}
+.imageTitle{
+    background-color: #bebebe;
+    text-align: center;
+    border-radius: 5px;;
 }

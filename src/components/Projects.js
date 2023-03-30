@@ -38,7 +38,9 @@ const handleNextClick = () => {
 
      return(
           <div className="imageContainer">
+               <div className="backBtnContainer btnContainer">
                <button className="backBtn btn" onClick={handleBackClick}> back </button>
+               </div>
                    <div className="imageAndTitle">
                      {isActive >= 0 && (
                           <img className="image" src={projects.find((project) => project.id === isActive).photo}></img>
@@ -47,7 +49,9 @@ const handleNextClick = () => {
                          <p className="imageTitle">{projects.find((project) => project.id === isActive).text}</p>
                          )}
                     </div>
+                    <div className="nextBtnContainer btnContainer">
                 <button className="nextBtn btn" onClick={handleNextClick}> next </button>
+                    </div>
           </div>
          )
      }
