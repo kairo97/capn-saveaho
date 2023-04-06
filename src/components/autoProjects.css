@@ -1,0 +1,26 @@
+.autoImageContainer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.btnContainer{
+    display: grid;
+    align-items: center;
+    z-index: 1;
+}
+.btn{
+    background-color: aqua;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid white 1px;
+    box-shadow: 5px 5px 25px white;
+}
+.backBtn{
+    justify-self: flex-end;
+}
+.image{
+    height: 600px;
+    border-radius: 15px;
+    border: white 1px solid;
+    margin: 5px;
+}
