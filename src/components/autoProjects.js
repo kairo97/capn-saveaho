@@ -4,8 +4,18 @@ import engineCloseup from "./images/autoImages/engineCloseup.jpg"
 import jeepside from "./images/autoImages/jeepside.jpg"
 import jeeptrashed from "./images/autoImages/jeeptrashed.jpg"
 import yellowengine from "./images/autoImages/yellowengine.jpg"
-
+import { useState } from "react"
 function autoProjects(){
+    const [currentImage, setCurrentImage] = useState(0)
+
+    const handleBackClick = () => {
+        setCurrentImage((currentImage - 1 + autoPhotos.length) % autoPhotos.length)
+             };
+      
+   const handleNextClick = () => {
+        setCurrentImage((currentImage + 1 ) % autoPhotos.length);
+   };
+
     const autoPhotos =[ {id: 0,
                         photo: engineFront,
                         text: "Engine Work"}, 
@@ -24,7 +34,20 @@ function autoProjects(){
 
     return(
         <div className="autoImageContainer">
-
+             <div className="backBtnContainer btnContainer">
+               <button className="backBtn btn" onClick={handleBackClick}> back </button>
+            </div>
+            <div className="autoImageCarousel">
+            {currentImage >= 0 && (
+                          <img className="image" src={autoPhotos.find((project) => project.id === currentImage).photo}></img>
+                          )}
+             {isActive >= 0 && (
+                         <p className="imageTitle">{autoPhotos.find((project) => project.id === currentImage).text}</p>
+                         )}
+            </div>
+            <div className="nextBtnContainer btnContainer">
+                <button className="nextBtn btn" onClick={handleNextClick}> next </button>
+            </div>
         </div>
     )
 } export default autoProjects;
