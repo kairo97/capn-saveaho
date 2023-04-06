@@ -1,0 +1,14 @@
+.navBar{
+    color: white;
+   border: solid red 1px;
+   text-align: center;
+   width: 100%
+}
+.navMenu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style: none;
+}
+.navItem{
+    border: solid white 1px;
+}
