@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css"
 
 
-function Header({ setClickedLink}) {
+function Header() {
     return(
         <header>
             <div className="titleBox">

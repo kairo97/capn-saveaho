@@ -14,13 +14,11 @@ function App() {
       <div className='page'>
         <div className="headerContainer">
         <Header 
-        setClickedLink={setClickedLink}
         />
         </div>
         <div className='midGrid'>
         <div className="projectContainer">
         <Projects
-        clickedLink={clickedLink}
         />
         </div>
         <div className="aboutContainer">

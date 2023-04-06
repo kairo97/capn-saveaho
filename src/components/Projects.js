@@ -2,7 +2,7 @@
 
 
 import "./Projects.css"
-import autoProjects from "./autoProjects";
+import AutoProjects from "./AutoProjects";
 import { useState } from "react";
 
 function Projects(){
@@ -16,7 +16,7 @@ return(
                <li className="navItem" onClick={setNavItem('misc')}>Misc</li>
           </ul>
           <div className="projectContainer">
-               {navItem === "auto" && <autoProjects/>}
+               {navItem === "auto" && <AutoProjects/>}
           </div>
 
      </div>
