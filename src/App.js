@@ -9,7 +9,6 @@ import Footer from "./components/Footer"
 
 function App() {
 
-  const [clickedLink, setClickedLink] = useState("")
   
   return (
       <div className='page'>
