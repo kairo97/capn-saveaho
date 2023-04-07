@@ -5,6 +5,7 @@ import hardwoodBefore from "../images/flooring/hardwoodbefore.jpg"
 import hardwoodDoor from "../images/flooring/hardwoodCircledoor.jpg"
 import party from "../images/flooring/momsparty.jpg"
 import kitchen from "../images/flooring/kitchenRedone.jpg"
+import "./Flooring.css"
 import { useState } from "react"
 
 function Flooring() {
