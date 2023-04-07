@@ -16,6 +16,7 @@
 }
 .contactHeaderContainer h3{
     background-color: #41337a;
+    color: #c9e4e7;
     border-radius: 15px;
     border:solid white 1px;
     box-shadow: 5px 5px 5px black;
@@ -29,6 +30,7 @@
 .contactInfo ul {
     list-style: none;
     background-color:  #c9e4e7;
+    color: #c9e4e7
 }
 .contactInfo li {
     display: flex;
@@ -40,14 +42,19 @@
     margin: 5px;
     margin-top:10px;
     background-color: #41337a;
+    color: #c9e4e7;
     box-shadow: 5px 5px 5px black;
 }
 .contactInfo a {
     background-color:rgba(104, 104, 186, 0.16);
+    color: #c9e4e7;
     text-decoration: none;
-    color: black;
     cursor: pointer;
 }
 .contactInfo a:hover{
-    color: white;
+    color: #41337a;
+    background-color:#c9e4e7;
+    padding:5px;
+    border-radius: 10px;
+    border: solid 1px chartreuse;
 }

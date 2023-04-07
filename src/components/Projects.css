@@ -10,4 +10,9 @@
 }
 .navItem{
     border: solid white 1px;
+    cursor: pointer;
+}
+.navItem:hover{
+    background-color: #caffd0;
+    color:#f06543
 }
