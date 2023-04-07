@@ -50,6 +50,7 @@
     color: #c9e4e7;
     text-decoration: none;
     cursor: pointer;
+    transition: 300ms;
 }
 .contactInfo a:hover{
     color: #41337a;
