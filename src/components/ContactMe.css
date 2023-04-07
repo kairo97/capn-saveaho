@@ -3,32 +3,32 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
     margin:10px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black
 }
 .contactHeaderContainer{
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
     width:40%;
     text-align: center;
     padding:5px;
 }
 .contactHeaderContainer h3{
-    background-color: rgba(104, 104, 186, 0.676);
+    background-color: #41337a;
     border-radius: 15px;
     border:solid white 1px;
     box-shadow: 5px 5px 5px black;
 }
 .contactInfo{
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
     width: 40%;
     padding:5px;
     margin:5px;
 }
 .contactInfo ul {
     list-style: none;
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
 }
 .contactInfo li {
     display: flex;
@@ -39,7 +39,7 @@
     padding: 4px;
     margin: 5px;
     margin-top:10px;
-    background-color:rgba(104, 104, 186, 0.676);
+    background-color: #41337a;
     box-shadow: 5px 5px 5px black;
 }
 .contactInfo a {

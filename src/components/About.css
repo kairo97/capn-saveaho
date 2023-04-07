@@ -11,7 +11,7 @@
     justify-self: center;
     text-align: center;
     width: 50%;
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
     margin-top: 5px;
     padding:5px;
     border-radius: 5px;
@@ -25,10 +25,10 @@
     padding:5px;
     width:80%;
     border-radius: 15px;
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
     box-shadow: 3px 3px 3px #c5d8d1;
     justify-self: center;
 }
 .bioParagraph p{
-    background-color: #c5d8d1;
+    background-color:  #c9e4e7;
 }

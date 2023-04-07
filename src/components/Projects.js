@@ -2,6 +2,7 @@
 
 import AutoProjects from "./AutoProjects";
 import Flooring from "./Flooring";
+import Drywall from "./Drywall"
 import "./Projects.css"
 import { useState } from "react";
 
@@ -21,6 +22,7 @@ return(
           <div className="projectContainer">
                {navItem === "auto" && <AutoProjects/>}
                {navItem === "floor" && <Flooring/>}
+               {navItem === "drywall" && <Drywall/>}
                
           </div>
 
