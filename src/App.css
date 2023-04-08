@@ -21,9 +21,20 @@ grid-column-start:2;
 }
 .contactBtn{
   border:solid 1px white;
+  color: white;
   padding:1.4px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: 500ms;
+}
+.contactBtn:hover{
+  transform: translateY(50%);
+  background-color: #caffd0;
+    color:#f06543;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+
 }
 
 @keyframes inAnimation {

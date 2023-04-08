@@ -11,12 +11,14 @@
 .navItem{
     border: solid white 1px;
     cursor: pointer;
+    z-index: 2;
     transition: 500ms;
 }
 .navItem:hover{
     background-color: #caffd0;
     color:#f06543;
-    transform: translateY(-25%);
+    transform: translateY(50%);
     font-size: 25px;
     border-radius: 15px;
+    
 }
