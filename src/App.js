@@ -3,7 +3,7 @@ import React, { useState, useEffect }from 'react';
 import './App.css';
 import Header from "./components/Header"
 import Projects from './components/Projects';
-import About from "./components/About"
+import Review from "./components/Review"
 import ContactMe from './components/ContactMe';
 import Footer from "./components/Footer"
 function useDelayUnmount(isMounted, delayTime) {
@@ -39,10 +39,12 @@ function App() {
         <Projects
         />
         </div>
-        <div className="aboutContainer">
+        <div className="reviewContainer">
+          <div className='contactBtnContainer'>
           <button className='contactBtn' onClick={() => {
             setIsMounted(!isMounted) }}>Contact Me</button>
-        <About/>
+            </div>
+        <Review/>
         </div>
         </div>
         {showDiv && <div className="contactContainer" style={isMounted ? mountedStyle : unmountedStyle}>

@@ -1,8 +1,14 @@
-/* * {border:1px solid red} */
+
 .page{
   padding:0;
   margin:0;
+  width: 100%;
   display: inline-grid;
+}
+.page *{
+
+border: red 1px solid;
+
 }
 .headerContainer{
   grid-column: auto;
@@ -16,8 +22,12 @@
 grid-column-start: 1;
 
 }
-.aboutContainer{
+.reviewContainer{
 grid-column-start:2;
+}
+.contactBtnContainer{
+  display: grid;
+  justify-content: flex-end;
 }
 .contactBtn{
   border:solid 1px white;
