@@ -8,8 +8,15 @@ import ContactMe from './components/ContactMe';
 import Footer from "./components/Footer"
 
 function App() {
-
+  const [openContact, setOpenContact] = useState(false) 
   
+  const openMenu = () => {
+    if(openContact === false){
+       setOpenContact(true)
+      } else if (openContact === true){
+        setOpenContact(false)
+      }
+  }
   return (
       <div className='page'>
         <div className="headerContainer">
@@ -22,12 +29,13 @@ function App() {
         />
         </div>
         <div className="aboutContainer">
+          <button className='contactBtn' onClick={openMenu}>Contact Me</button>
         <About/>
         </div>
         </div>
-        <div className="contactContainer">
-        <ContactMe/>
-        </div>
+        {openContact && <div className="contactContainer">
+         <ContactMe/>
+        </div>}
         <Footer/>
       </div>
   );
