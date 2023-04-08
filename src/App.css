@@ -19,13 +19,31 @@ grid-column-start: 1;
 .aboutContainer{
 grid-column-start:2;
 }
-.contactContainer::after{
-  transition: 1s;
-}
 .contactBtn{
   border:solid 1px white;
   padding:1.4px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
