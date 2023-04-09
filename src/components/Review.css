@@ -1,16 +1,22 @@
 
 .reviewBox{
     display: grid;
+    grid-template-rows: 15% 85%;
     justify-content: flex-start;
     height:100%;
     min-width: 100%;
 }
 .reviewBoxHeader{
+    justify-content: center;
+    justify-self: center;
+    grid-row: 1;
     display: grid;
-    grid-template-rows:60% 40%;
+    grid-template-rows:50% 50%;
+    width: 40%;
 
 }
 .reviewBoxTitle{
+    grid-row:1;
     font-size: 20px;
     background-color: #c5d8d1;
     text-align: center;
@@ -21,13 +27,26 @@
 
 }
 .reviewBtn{
+    grid-row:2;
+    width: 50%;
+    justify-self: center;
     border-radius: 15px;
+    height:fit-content;
     border: solid white 1px;
-    background-color: #c9e4e7;
+    color:white;
     cursor: pointer;
-
+    margin-top:20px;
+    transition: 500ms;
+}
+.reviewBtn:hover{
+    background-color: #c9e4e7;
+    font-size: 20px;
+    transform: translateY(15%);
+    box-shadow: 5px 5px 45px white;
+    color:black;
 }
 .review{
+    grid-row:2;
     border:solid white 1px;
     text-indent: 40px;
     margin: 10px;
@@ -38,4 +57,16 @@
     background-color:  #c9e4e7;
     box-shadow: 3px 3px 3px #c5d8d1;
     justify-self: center;
+}
+.reviewP{
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 100px;;
+    border: solid 1px white;
+    background-color: #c5d8d1;
+    width:60%;
+    height:fit-content;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 45px white;
 }
