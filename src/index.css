@@ -3,3 +3,6 @@
     padding:0;
     background-color: #41337a;
 }
+:root{
+    z-index: 0;
+}

@@ -26,6 +26,7 @@ const unmountedStyle = {
 };
 function App() {
   const [isMounted, setIsMounted] = useState(false) 
+  const [isRightPage, setRightPage] = useState("")
   const showDiv = useDelayUnmount(isMounted, 250); 
  
   return (
@@ -40,11 +41,14 @@ function App() {
         />
         </div>
         <div className="reviewContainer">
-          <div className='contactBtnContainer'>
-          <button className='contactBtn' onClick={() => {
+          <div className='navBtnContainer'>
+          <button className='openReviewBtn Btn' onClick={() => {
+            setRightPage("review")
+          }}>Reviews</button>
+          <button className='contactBtn Btn' onClick={() => {
             setIsMounted(!isMounted) }}>Contact Me</button>
             </div>
-        <Review/>
+        {isRightPage === "review" && <Review/>}
         </div>
         </div>
         {showDiv && <div className="contactContainer" style={isMounted ? mountedStyle : unmountedStyle}>
