@@ -10,7 +10,7 @@ function Review() {
         author: "Kara Mckay"
     }, {
         id:1,
-        text: " review 2",
+        text: "review 2",
         author:"another reviewer"
     }
     ]
@@ -29,6 +29,13 @@ function Review() {
                  {reviews.find((review) => review.id === reviewP).text}
                  </p>
                 )}
+          {reviews.length > 0 && reviews.find((review) => review.id === reviewP) && (
+  reviews.find((review) => review.id === reviewP).author && (
+    <p className="reviewAuthor">
+      {reviews.find((review) => review.id === reviewP).author}
+    </p>
+  )
+)}
 
         </div>
     )
