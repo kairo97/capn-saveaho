@@ -8,11 +8,7 @@
   grid-template-rows: 6% 58% 36%;
   z-index:0;
 }
-.page *{
 
-border: red 1px solid;
-
-}
 .headerContainer{
   grid-column: auto;
   
@@ -25,6 +21,7 @@ border: red 1px solid;
 .projectContainer{
 grid-column-start: 1;
 
+
 }
 .reviewContainer{
 grid-column-start:2;
@@ -33,12 +30,15 @@ max-height: 100%;
 overflow-y: hidden;
 overflow-x: hidden;
 justify-content: center;
+z-index:1;
+
 }
 .navBtnContainer{
   display: grid;
   grid-template-columns: 50% 50%;
   justify-content: flex-end;
 }
+
 .contactBtn{
   border:solid 1px white;
   color: white;
@@ -72,6 +72,15 @@ justify-content: center;
   font-size: 20px;
   cursor: pointer;
   border-radius: 15px;
+}
+.contactContainer{
+  z-index:2;
+  margin:0;
+  transition: 1s;
+}
+.contactContainer:hover{
+  font-size: 40px;
+  
 }
 
 @keyframes inAnimation {

@@ -4,9 +4,11 @@
     justify-content:center;
     align-items: center;
     background-color:  #c9e4e7;
-    margin:10px;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px black
+    box-shadow: 5px 5px 45px black;
+    z-index: 1;
+    width: 90%;
+    margin:0 auto;
 }
 .contactHeaderContainer{
     background-color:  #c9e4e7;
