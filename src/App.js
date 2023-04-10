@@ -42,6 +42,10 @@ function App() {
          setNavItem("drywall")
     } else if (event.target === document.querySelector("#misc")) {
          setNavItem("misc")
+    } else if (event.target === document.querySelector("#reviews")) {
+      setRightPage("review")
+    } else if (event.target === document.querySelector("#contact")) {
+      setIsMounted(!isMounted)
     }
     console.log(navItem)
 }
@@ -57,11 +61,8 @@ function App() {
                <li className="navItem" id="floor" onClick={ChangePage}>Flooring</li>
                <li className="navItem" id="drywall" onClick={ChangePage}>Drywall</li>
                <li className="navItem" id="misc" onClick={ChangePage}>Misc</li>
-               <li className='navItem' id="reviews" onClick={() => {
-                setRightPage("review")
-               }}>Reviews</li>
-               <li className='navItem' id="contact" onClick={() => {
-            setIsMounted(!isMounted) }}>Contact</li>
+               <li className='navItem' id="reviews" onClick={ChangePage}>Reviews</li>
+               <li className='navItem' id="contact" onClick={ChangePage}>Contact</li>
           </ul>
         <div className='midGrid'>
         <div className="projectContainer">
