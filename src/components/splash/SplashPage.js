@@ -3,7 +3,7 @@ import excavator1 from "../../images/misc/excavator1.jpeg"
 import woodCounter from "../../images/misc/woodCountertop.jpeg"
 import framingWzane from "../../images/framing/framingWzane.jpeg"
 import respirator from "../../images/misc/respirator.jpg"
-function SpashPage(){
+function SplashPage(){
 
     return(
         <div className="splashPage">
@@ -21,4 +21,4 @@ function SpashPage(){
         </div>
     )
 }
-export default SpashPage;
+export default SplashPage;

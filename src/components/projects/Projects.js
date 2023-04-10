@@ -4,20 +4,33 @@ import AutoProjects from "./AutoProjects";
 import Flooring from "./Flooring";
 import Drywall from "./Drywall"
 import "./Projects.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Projects(){
+function Projects(isFirstLoad,setFirstLoad){
      const [navItem, setNavItem] = useState('')
-    
+     const ChangePage = (event) => {
+          event.preventDefault()
+          if (event.target === document.querySelector("#auto")) {
+               setNavItem("auto")
+          } else if (event.target === document.querySelector("#floor")) {
+               setNavItem("floor")
+          } else if (event.target === document.querySelector("#drywall")) {
+               setNavItem("drywall")
+          } else if (event.target === document.querySelector("#misc")) {
+               setNavItem("misc")
+          }
+               setFirstLoad(false)
+     }
+     
           
      
 return(
      <div className="navBar">
           <ul className="navMenu">
-               <li className="navItem" id="auto" onClick={() => setNavItem("auto")}>Auto Repair</li>
-               <li className="navItem" id="floor" onClick={() => setNavItem('floor')}>Flooring</li>
-               <li className="navItem" id="drywall" onClick={() => setNavItem('drywall')}>Drywall</li>
-               <li className="navItem" id="misc" onClick={() => setNavItem('misc')}>Misc</li>
+               <li className="navItem" id="auto" onClick={ChangePage}>Auto Repair</li>
+               <li className="navItem" id="floor" onClick={ChangePage}>Flooring</li>
+               <li className="navItem" id="drywall" onClick={ChangePage}>Drywall</li>
+               <li className="navItem" id="misc" onClick={ChangePage}>Misc</li>
           </ul>
           <div className="projectContainer">
                {navItem === "auto" && <AutoProjects/>}
