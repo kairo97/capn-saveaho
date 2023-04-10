@@ -28,29 +28,44 @@ const unmountedStyle = {
 function App() {
   const [isMounted, setIsMounted] = useState(false) 
   const [isRightPage, setRightPage] = useState("")
+  const [navItem, setNavItem] = useState("")
   const [isFirstLoad, setFirstLoad] =  useState(true)
   const showDiv = useDelayUnmount(isMounted, 250); 
-  
+  const ChangePage = (event) => {
+    event.preventDefault()
+    setFirstLoad(false)
+    if (event.target === document.querySelector("#auto")) {
+         setNavItem("auto")
+    } else if (event.target === document.querySelector("#floor")) {
+         setNavItem("floor")
+    } else if (event.target === document.querySelector("#drywall")) {
+         setNavItem("drywall")
+    } else if (event.target === document.querySelector("#misc")) {
+         setNavItem("misc")
+    }
+}
   return (
       <div className='page'>
         <div className="headerContainer">
         <Header 
         />
         </div>
+        <ul className="navMenu">
+               <li className="navItem" id="auto" onClick={ChangePage}>Auto Repair</li>
+               <li className="navItem" id="floor" onClick={ChangePage}>Flooring</li>
+               <li className="navItem" id="drywall" onClick={ChangePage}>Drywall</li>
+               <li className="navItem" id="misc" onClick={ChangePage}>Misc</li>
+               <li className='navItem' id="reviews" onClick={() => {
+                setRightPage("review")
+               }}>Reviews</li>
+               <li className='navItem' id="contact" onClick={() => {
+            setIsMounted(!isMounted) }}>Contact</li>
+          </ul>
         <div className='midGrid'>
-          
-
         <div className="projectContainer">
-        <Projects isFirstLoad={isFirstLoad} setFirstLoad={setFirstLoad}/>
+        <Projects navItem={navItem}/>
         </div>
         <div className="reviewContainer">
-          <div className='navBtnContainer'>
-          <button className='openReviewBtn Btn' onClick={() => {
-            setRightPage("review")
-          }}>Reviews</button>
-          <button className='contactBtn Btn' onClick={() => {
-            setIsMounted(!isMounted) }}>Contact Me</button>
-            </div>
         {isRightPage === "review" && <Review/>}
         </div>
         </div>
