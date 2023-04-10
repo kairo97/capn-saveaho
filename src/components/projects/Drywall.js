@@ -1,9 +1,9 @@
-import celingPanel from "../images/drywall/ceilingPanel.jpg";
-import baywindow from "../images/drywall/drywall&baywindow.jpg";
-import hardwood from "../images/drywall/drywall&hardwood.jpg";
-import dog from "../images/drywall/drywall&nugs.jpg";
-import shop from "../images/drywall/drywalledShop.jpg";
-import face from "../images/drywall/drywallface.jpg";
+import celingPanel from "../../images/drywall/ceilingPanel.jpg";
+import baywindow from "../../images/drywall/drywall&baywindow.jpg";
+import hardwood from "../../images/drywall/drywall&hardwood.jpg";
+import dog from "../../images/drywall/drywall&nugs.jpg";
+import shop from "../../images/drywall/drywalledShop.jpg";
+import face from "../../images/drywall/drywallface.jpg";
 import "./Drywall.css";
 import { useState } from "react";
 

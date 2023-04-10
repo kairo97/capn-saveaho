@@ -1,9 +1,9 @@
 import "./AutoProjects.css";
-import engineFront from "../images/autoImages/engineFront.jpg";
-import engineCloseup from "../images/autoImages/engineCloseup.jpg";
-import jeepside from "../images/autoImages/jeepside.jpg";
-import jeeptrashed from "../images/autoImages/jeeptrashed.jpg";
-import yellowengine from "../images/autoImages/yellowengine.jpg";
+import engineFront from "../../images/autoImages/engineFront.jpg";
+import engineCloseup from "../../images/autoImages/engineCloseup.jpg";
+import jeepside from "../../images/autoImages/jeepside.jpg";
+import jeeptrashed from "../../images/autoImages/jeeptrashed.jpg";
+import yellowengine from "../../images/autoImages/yellowengine.jpg";
 import { useState } from "react";
 function AutoProjects() {
   const [currentImage, setCurrentImage] = useState(0);

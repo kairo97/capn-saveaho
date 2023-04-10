@@ -2,7 +2,7 @@
 import React, { useState, useEffect }from 'react';
 import './App.css';
 import Header from "./components/Header"
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import Review from "./components/Review"
 import ContactMe from './components/ContactMe';
 import Footer from "./components/Footer"
