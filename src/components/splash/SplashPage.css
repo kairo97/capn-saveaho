@@ -1,0 +1,84 @@
+.splashPage{
+    border: solid red 1px;
+    position: absolute;
+    top:75px;
+    z-index:1;
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    grid-template-rows: 35% 65%;
+}
+.splashHeader{
+    margin-top: 40px;;
+    display: grid;
+    grid-template-rows: 25% 30% 35%;
+    text-align: center;
+    grid-row: 1;
+    gap:5px;
+    margin-bottom: 50px;
+    border:solid red 1px;
+    height:80%
+}
+.splashTitle{
+    border:solid red 1px;
+    width: 60%;
+    padding-left:25px;
+    padding-right:25px;
+    justify-self: center;
+    border-radius: 15px;
+    background-color: #caffd0;
+    grid-row:1;
+}
+.splashSubTitle{
+    border:solid red 1px;
+    width: 55%;
+    padding-left:25px;
+    padding-right:25px;
+    justify-self: center;
+    border-radius: 15px;
+    background-color: #caffd0;
+    grid-row:2;
+}
+.splashP{
+    border:solid red 1px;
+    background-color: #caffd0;
+    width:50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    justify-self: center;
+    grid-row:3;
+}
+.images{
+    width: 100vw;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 35px;
+    grid-row:2;
+}
+.image{
+    opacity:100%;
+}
+.image:hover{
+    opacity:50%;
+}
+.excavator{
+    grid-column:1;
+    width:20vw;
+    height:auto;
+}
+.countertop{
+    grid-column:2;
+    width: 20vw;
+    height:auto;
+}
+.framingOutside{
+    grid-column:3;
+    width:20vw;
+    height:auto
+}
+.respiratorPhoto{
+    grid-column:4;
+    width:20vw;
+    height:auto;
+}

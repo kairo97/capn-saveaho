@@ -43,7 +43,9 @@ function App() {
     } else if (event.target === document.querySelector("#misc")) {
          setNavItem("misc")
     }
+    console.log(navItem)
 }
+
   return (
       <div className='page'>
         <div className="headerContainer">
