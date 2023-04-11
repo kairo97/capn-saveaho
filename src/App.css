@@ -7,6 +7,7 @@
   display: grid;
   grid-template-rows: 6% 6% 80% 8%;
   z-index:0;
+  overflow-y: auto;
 }
 
 .headerContainer{
@@ -104,6 +105,11 @@ z-index:1;
   z-index:2;
   margin:0;
   transition: 1s;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+  min-width: 500px;
+  top:500px;
 }
 .contactContainer:hover{
   font-size: 40px;

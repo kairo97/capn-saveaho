@@ -6,4 +6,5 @@
 }
 :root{
     z-index: 0;
+    overflow-y: auto;
 }

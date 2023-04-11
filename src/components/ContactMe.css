@@ -9,6 +9,7 @@
     z-index: 1;
     width: 90%;
     margin:0 auto;
+    overflow-y:hidden;
 }
 .contactHeaderContainer{
     background-color:  #c9e4e7;

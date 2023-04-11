@@ -5,7 +5,7 @@
     height:90%;
     width:100%;
     z-index:1;
-    border: solid red 1px;
+    
 }
 .reviewBoxHeader{
     justify-content: center;
@@ -15,7 +15,7 @@
     display: grid;
     grid-template-rows:50% 50%;
     width: 40%;
-    border: solid red 1px;
+  
 
 }
 .reviewBoxTitle{
