@@ -29,13 +29,11 @@ function Review() {
                  {reviews.find((review) => review.id === reviewP).text}
                  </p>
                 )}
-          {reviews.length > 0 && reviews.find((review) => review.id === reviewP) && (
-  reviews.find((review) => review.id === reviewP).author && (
-    <p className="reviewAuthor">
-      {reviews.find((review) => review.id === reviewP).author}
-    </p>
-  )
-)}
+            {reviews.length > 0 && reviews.find((review) => review.id === reviewP) && (
+            <p className="reviewAuthor">
+                written by: {reviews.find((review) => review.id === reviewP).author}
+                </p>
+            )}
 
         </div>
     )

@@ -24,6 +24,7 @@
 }
 .navItem{
   border: solid white 1px;
+  color: white;
   cursor: pointer;
   padding-left: 25px;
   padding-right: 25px;
