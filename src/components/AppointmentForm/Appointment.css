@@ -25,4 +25,11 @@
 }
 .formBtn{
     cursor: pointer;
+    color:white;
+    transition: 500ms;
+}
+.formBtn:hover{
+    background-color: blue;
+    border-radius: 15px;
+    padding:2px;
 }
