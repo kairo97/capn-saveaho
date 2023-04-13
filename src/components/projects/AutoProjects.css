@@ -27,7 +27,11 @@
     border: white 1px solid;
     margin-top: 5px;;
     justify-self: flex-start;
-    
+}
+.imageTitle{
+    border: solid white 1px;
+    text-align: center;
+    color:white;
 }
 
 .btn:hover{
