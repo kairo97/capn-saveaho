@@ -1,11 +1,15 @@
 require("dotenv").config();
+const cors = require("cors")
 const express = require("express");
 const nodeMail = require("nodemailer");
 const path = require("path");
+const bodyParser = require("body-parser")
 
 const app = express();
+app.use(cors());
 
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}))
 app.use(express.static(path.join(__dirname, "public")));
 
 async function mainMail(name, email, subject, message) {
@@ -19,11 +23,13 @@ async function mainMail(name, email, subject, message) {
   const mailOption = {
     from: process.env.EMAIL,
     to: process.env.BUISNESSMAIL,
-    subject: subject,
+    subject: "scheduling",
     html: `You got a message from 
-    Email : ${email}
-    Name: ${name}
-    Message: ${message}`,
+    Capn-Saveaho
+    job-type: ${name},
+    contact-info: ${subject},
+    ideal start date: ${email},
+    aviability: ${message}  `,
   };
   try {
     await transporter.sendMail(mailOption);
@@ -41,15 +47,17 @@ app.get("/appointment", (req, res) => {
   res.render(appointment.html);
 });
 
-app.post("/appointment", async (req, res, next) => {
-  const { yourname, youremail, yoursubject, yourmessage } = req.body;
+app.post("/appointment", async (req, res) => {
+  const { name, email, subject, message } = req.body;
+  console.log(req.body);
   try {
-    await mainMail(yourname, youremail, yoursubject, yourmessage);
-    
+    const result = await mainMail(name, email, subject, message);
+    console.log(result)
     res.send("Message Successfully Sent!");
   } catch (error) {
+    console.log(error)
     res.send("Message Could not be Sent");
   }
 });
 
-app.listen(3000, () => console.log("Server is running!"));
+app.listen(3001, () => console.log("Server is running!"));
