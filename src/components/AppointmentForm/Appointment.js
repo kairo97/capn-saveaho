@@ -1,9 +1,9 @@
-function Apointment(){
+function Appointment(){
     
 
     return(
         <div className="appointment">
-            <form className="appointmentForm">
+            <form className="appointmentForm" action="http://localhost:3000/appointment" method="post">
                 <p className="formP jobtype">what type of job is it you need done?</p>
                 <input className="formInput jobinput" type="text" placeholder="job type" required></input>
                 <p className="formP jobdates">when are you looking to get this job done?</p>
@@ -17,3 +17,4 @@ function Apointment(){
         </div>
     )
 }
+export default Appointment;
