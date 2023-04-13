@@ -1,3 +1,4 @@
+import "./Appointment.css"
 function Appointment(){
     
 

@@ -29,8 +29,10 @@ function ContactMe() {
                     <li>email me at:</li>
                     <li><a target="_blank" rel="norefferer" href="mailto:jesro3@yahoo.com">jesro3@yahoo.com</a></li>
                     <li>Set up an appointment, send me your timeframe and job details and I'll be in contact</li>
-                    <button onClick={openForm}> Appointment Form</button>
                 </ul>
+                    <div className="appointmentBtnBox">
+                    <button className="appointmentBtn" onClick={openForm}> Open Appointment Form</button>
+                    </div>
             </div>
         </div>
     )

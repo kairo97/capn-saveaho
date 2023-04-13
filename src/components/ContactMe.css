@@ -32,7 +32,7 @@
 .contactInfo ul {
     list-style: none;
     background-color:  #c9e4e7;
-    color: #c9e4e7
+    color: #c9e4e7;
 }
 .contactInfo li {
     display: flex;
@@ -60,4 +60,22 @@
     padding:5px;
     border-radius: 10px;
     border: solid 1px chartreuse;
+}
+.appointmentBtnBox{
+    margin-top: 5px;
+    background-color: #c9e4e7;
+    display: flex;
+    justify-content: center;
+}
+.appointmentBtn{
+    background-color: #c9e4e7;
+    border-radius: 15px;
+    padding:5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.appointmentBtn:hover{
+    background-color: #41337a;
+    color:#c9e4e7;
+    font-size: 15px;
 }

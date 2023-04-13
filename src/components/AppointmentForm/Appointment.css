@@ -1,0 +1,25 @@
+.appointment{
+    position:absolute;
+    right:100px;
+    top:10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c9e4e7;
+    border: solid 1px black;
+}
+.appointmentForm{
+    background-color: #c9e4e7;
+    display:grid;
+    gap: 5px;
+}
+.formP{
+    background-color: #c9e4e7;
+    border:solid 1px black;
+    padding:2px;
+    border-radius:5px;
+    text-align: center;
+}
+.formInput{
+    background-color: #c9e4e7;
+    text-align: center;
+}
