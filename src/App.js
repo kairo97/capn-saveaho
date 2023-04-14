@@ -27,8 +27,8 @@ const unmountedStyle = {
 };
 function App() {
   const [isMounted, setIsMounted] = useState(false) 
-  const [isRightPage, setRightPage] = useState("")
-  const [navItem, setNavItem] = useState("")
+  const [isRightPage, setRightPage] = useState("review")
+  const [navItem, setNavItem] = useState("auto")
   const [isFirstLoad, setFirstLoad] =  useState(true)
   const showDiv = useDelayUnmount(isMounted, 250); 
   const ChangePage = (event) => {

@@ -3,7 +3,7 @@
   padding:0;
   margin:0;
   width: 100%;
-  height:100vh;
+  height:100%;
   display: grid;
   grid-template-rows: 6% 6% 80% 8%;
   z-index:0;
@@ -29,6 +29,7 @@
   color: white;
   cursor: pointer;
   padding-left: 25px;
+  font-size: 15px;
   padding-right: 25px;
   height: fit-content;
   z-index: 3;
@@ -44,7 +45,8 @@
 .midGrid{
   top:0 auto;
   display:grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, minmax(40px, auto));
 }
 .projectContainer{
 grid-column-start: 1;
@@ -137,4 +139,42 @@ z-index:1;
     visibility: hidden;
   }
 }
+@media screen and (max-width:1260px) {
+  .midGrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: hidden;
 
+  }
+  .projectContainer{
+    grid-row-start:1;
+    grid-column-start: 1;
+    width: 100%;
+    height:100%;
+    overflow-y:scroll
+  }
+  
+  .reviewContainer{
+    grid-row-start:2;
+    grid-column-start:1 ;
+    width:100%;
+    height:100%;
+  }
+  .navMenu{
+    justify-content: center;
+  }
+  .navItem{
+    font-size: 15px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:754px) {
+  .navMenu{
+    height:fit-content;
+  }
+  .navItem{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}

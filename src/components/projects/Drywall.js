@@ -59,14 +59,16 @@ function Drywall() {
         </button>
       </div>
       <div className="drywallImageCarousel">
+        <div className="imageBox">
         {drywallImage >= 0 && (
           <img
-            className="image"
-            src={
-              drywallPhotos.find((project) => project.id === drywallImage).photo
-            }
+          className="image"
+          src={
+            drywallPhotos.find((project) => project.id === drywallImage).photo
+          }
           ></img>
-        )}
+          )}
+          </div>
         {drywallImage >= 0 && (
           <p className="imageTitle">
             {drywallPhotos.find((project) => project.id === drywallImage).text}

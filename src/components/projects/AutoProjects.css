@@ -1,6 +1,6 @@
 .autoImageContainer{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 18% 64% 18%;
 }
 .btnContainer{
     display: grid;
@@ -21,12 +21,16 @@
 .backBtn{
     justify-self: flex-end;
 }
-.image{
-    height: 600px;
+.imageBox{
+    border: solid white 2px;
     border-radius: 15px;
-    border: white 1px solid;
-    margin-top: 5px;;
+}
+.image{
+    height: 100%;
+    min-width: 100%;
+    border-radius: 15px;
     justify-self: flex-start;
+    z-index: 1;
 }
 .imageTitle{
     border: solid white 1px;
@@ -39,4 +43,21 @@
     color:#c9e4e7;
     padding:10px;
     font-size: 20px;
+}
+@media screen and (max-width:1260px){
+    .autoImageContainer{
+        overflow-y: hidden;
+    }
+    .autoImageCarousel{
+        overflow-y: hidden;
+    }
+    .imageBox{
+        height:400px;
+        overflow-y:hidden
+    }
+    .image{
+        aspect-ratio: 1/1;
+        height: 400px;
+        overflow-y: hidden;
+    }
 }

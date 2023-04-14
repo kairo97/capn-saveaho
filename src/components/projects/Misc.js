@@ -53,12 +53,14 @@ function Misc() {
             </button>
           </div>
           <div className="miscImageCarousel">
+            <div className="imageBox">
             {miscPhoto >= 0 && (
-              <img
+                <img
                 className="image"
                 src={miscPics.find((project) => project.id === miscPhoto).photo}
-              ></img>
-            )}
+                ></img>
+                )}
+                </div>
             {miscPhoto >= 0 && (
               <p className="imageTitle">
                 {miscPics.find((project) => project.id === miscPhoto).text}

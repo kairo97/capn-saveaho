@@ -32,14 +32,16 @@ function AutoProjects() {
         </button>
       </div>
       <div className="autoImageCarousel">
+      <div className="imageBox">
         {currentImage >= 0 && (
           <img
-            className="image"
-            src={
-              autoPhotos.find((project) => project.id === currentImage).photo
-            }
+          className="image"
+          src={
+            autoPhotos.find((project) => project.id === currentImage).photo
+          }
           ></img>
-        )}
+          )}
+          </div>
         {currentImage >= 0 && (
           <p className="imageTitle">
             {autoPhotos.find((project) => project.id === currentImage).text}

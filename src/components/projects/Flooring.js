@@ -36,12 +36,14 @@ function Flooring() {
         </button>
       </div>
       <div className="floorImageCarousel">
+        <div className="imageBox">
         {floorImage >= 0 && (
           <img
-            className="image"
-            src={floorPhotos.find((project) => project.id === floorImage).photo}
+          className="image"
+          src={floorPhotos.find((project) => project.id === floorImage).photo}
           ></img>
-        )}
+          )}
+          </div>
         {floorImage >= 0 && (
           <p className="imageTitle">
             {floorPhotos.find((project) => project.id === floorImage).text}
