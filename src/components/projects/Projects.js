@@ -3,6 +3,7 @@
 import AutoProjects from "./AutoProjects";
 import Flooring from "./Flooring";
 import Drywall from "./Drywall"
+import Misc from "./Misc"
 import "./Projects.css"
 
 
@@ -14,6 +15,7 @@ return(
                {navItem === "auto" && <AutoProjects/>}
                {navItem === "floor" && <Flooring/>}
                {navItem === "drywall" && <Drywall/>}
+               {navItem === "misc" && <Misc/>}
           </div>
                
 

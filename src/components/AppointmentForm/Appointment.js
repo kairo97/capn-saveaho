@@ -24,6 +24,7 @@ function Appointment(){
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error))
+      alert("form submitted, I will be in contact as soon as possible, thank you.")
       
     };
 

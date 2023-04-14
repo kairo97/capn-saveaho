@@ -37,7 +37,6 @@
 .navItem:hover{
   background-color: #caffd0;
   color:#f06543;
-  transform: translateY(50%);
   font-size: 25px;
   border-radius: 15px;
   

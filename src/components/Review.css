@@ -1,6 +1,7 @@
 
 .reviewBox{
     display: grid;
+    grid-template-rows: 23% 57% 20%;
     justify-content: center;
     height:90%;
     width:100%;
@@ -44,27 +45,28 @@
     color:white;
     cursor: pointer;
     margin-top:20px;
+    z-index:1;
     transition: 1s;
 }
 .reviewBtn:hover{
     background-color: #c9e4e7;
     font-size: 20px;
+    width: 100%;
     padding: 10px;
     /* transform: translateY(15%); */
-    box-shadow: 5px 5px 45px white;
     color:black;
 }
 .review{
     grid-row:2;
     border:solid white 1px;
     text-indent: 40px;
-    margin: 10px;
     padding:5px;
     width:80%;
     border-radius: 15px;
     background-color:  #c9e4e7;
     box-shadow: 3px 3px 3px #c5d8d1;
     justify-self: center;
+    z-index:0;
 }
 .reviewP{
     justify-self: center;
@@ -74,8 +76,10 @@
     width:60%;
     height:fit-content;
     padding:20px;
+    margin-top:20px;
     border-radius: 15px;
     box-shadow: 5px 5px 45px white;
+    z-index:0;
 }
 .reviewAuthor{
     justify-self: center;
@@ -83,9 +87,11 @@
     align-self: flex-start;
     border: solid 1px white;
     background-color: #c5d8d1;
-    width:60%;
+    width:30%; 
+    bottom: 45%;
     height:fit-content;
     margin:0  auto;
     border-radius: 15px;
     z-index:2;
+    position: absolute;
 }
