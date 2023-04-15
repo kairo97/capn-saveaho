@@ -1,7 +1,6 @@
 .autoImageContainer{
     display: grid;
     grid-template-columns: 18% 64% 18%;
-    border:solid red 1px;
 }
 .btnContainer{
     display: grid;

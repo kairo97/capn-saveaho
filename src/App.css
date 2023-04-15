@@ -12,6 +12,7 @@
 
 .headerContainer{
   grid-column: auto;
+  overflow-y: hidden;
   
 }
 .navMenu{
@@ -49,7 +50,6 @@
   grid-template-rows: repeat(1, minmax(40px, auto));
   height:100%;
   overflow-y: none;
-  border:solid red 1px;
   top:15px;
 }
 .projectContainer{
@@ -152,7 +152,22 @@ overflow-y: hidden;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     overflow-y: hidden;
+    height:fit-content;
 
+  }
+  .autoImageContainer, .drywallImageContainer, .floorImageContainer, .miscImageContainer{
+    max-width: 688px;
+    margin:0 auto;
+  }
+  .autoImageCarousel{
+    max-width: 509px;
+  }
+  .imageBox{
+    max-width: 405px;
+    min-width: 50%;
+  }
+  .image{
+    min-width: 50%;
   }
   .projectContainer{
     grid-row-start:1;
@@ -186,5 +201,14 @@ overflow-y: hidden;
   }
 }
 @media screen and (max-width:475px) {
-  
+  .page{
+    min-width: 80%;
+  }
+  .reviewContainer{
+    position: relative;
+  }
+  .reviewAuthor{
+    position: absolute;
+    bottom:-25px;
+  }
 }

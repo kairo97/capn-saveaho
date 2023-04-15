@@ -17,6 +17,8 @@
     display: grid;
     grid-template-rows:50% 50%;
     width: 40%;
+    height: fit-content;
+    overflow-y: hidden;
   
 
 }
@@ -30,7 +32,7 @@
     height:fit-content;
     border-radius: 15px;
     padding:10px;
-    margin: 10px;
+    margin: 8px;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -45,7 +47,7 @@
     border: solid white 1px;
     color:white;
     cursor: pointer;
-    margin-top:20px;
+    margin-top:16px;
     z-index:1;
     transition: 1s;
 }
