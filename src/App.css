@@ -43,13 +43,19 @@
   
 }
 .midGrid{
-  top:0 auto;
+  position: relative;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1, minmax(40px, auto));
+  height:100%;
+  overflow-y: none;
+  border:solid red 1px;
+  top:15px;
 }
 .projectContainer{
 grid-column-start: 1;
+height:100%;
+overflow-y: hidden;
 
 
 }
@@ -61,6 +67,7 @@ overflow-y: hidden;
 overflow-x: hidden;
 justify-content: center;
 z-index:1;
+overflow-y: hidden;
 
 }
 .navBtnContainer{
@@ -152,7 +159,7 @@ z-index:1;
     grid-column-start: 1;
     width: 100%;
     height:100%;
-    overflow-y:scroll
+    overflow-y:hidden;
   }
   
   .reviewContainer{
@@ -177,4 +184,7 @@ z-index:1;
     padding-left: 0%;
     padding-right: 0%;
   }
+}
+@media screen and (max-width:475px) {
+  
 }

@@ -76,7 +76,6 @@ function App() {
         {showDiv && <div className="contactContainer" style={isMounted ? mountedStyle : unmountedStyle}>
          <ContactMe/>
         </div>}
-        <Footer/>
       </div>
   );
 }

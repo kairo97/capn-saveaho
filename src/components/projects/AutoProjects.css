@@ -1,6 +1,7 @@
 .autoImageContainer{
     display: grid;
     grid-template-columns: 18% 64% 18%;
+    border:solid red 1px;
 }
 .btnContainer{
     display: grid;
@@ -22,15 +23,20 @@
     justify-self: flex-end;
 }
 .imageBox{
+    margin:0 auto;
     border: solid white 2px;
     border-radius: 15px;
+    height:88%;
+    width:90%;
+    overflow-y: hidden;
 }
 .image{
-    height: 100%;
+    height: 99.6%;
     min-width: 100%;
     border-radius: 15px;
     justify-self: flex-start;
     z-index: 1;
+    overflow-y: hidden;
 }
 .imageTitle{
     border: solid white 1px;
