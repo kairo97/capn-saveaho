@@ -5,6 +5,7 @@ function Appointment(){
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [client, setClient] = useState("");
   
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -15,6 +16,7 @@ function Appointment(){
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+          client: client,
           name: name,
           email: email,
           subject: subject,
@@ -32,7 +34,7 @@ function Appointment(){
         <div className="appointment">
           <form className="appointmentForm" onSubmit={handleSubmit}>
             <p className="formP clientName"> what is your name?</p>
-            <input className="formInput nameInput" type="text" placeholder="first name   last name"></input>
+            <input className="formInput nameInput" type="text" placeholder="first name   last name" required value={client} onChange={(event) => setClient(event.target.value)}></input>
             <p className="formP jobtype">what type of job is it you need done?</p>
             <input className="formInput jobinput" type="text" placeholder="job type" required value={name} onChange={(event) => setName(event.target.value)} />
             <p className="formP jobdates">when are you looking to get this job done?</p>

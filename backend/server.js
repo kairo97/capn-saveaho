@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(express.static(path.join(__dirname, "public")));
 
-async function mainMail(name, email, subject, message) {
+async function mainMail(name, email, subject, message, client) {
   const transporter = await nodeMail.createTransport({
     service: "hotmail",
     auth: {
@@ -26,6 +26,7 @@ async function mainMail(name, email, subject, message) {
     subject: "scheduling",
     html: `You got a message from 
     Capn-Saveaho
+    their name: ${client},
     job-type: ${name},    
     contact-info: ${subject},     
     ideal start date: ${email},     
@@ -48,10 +49,10 @@ app.get("/appointment", (req, res) => {
 });
 
 app.post("/appointment", async (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message, client } = req.body;
   console.log(req.body);
   try {
-    const result = await mainMail(name, email, subject, message);
+    const result = await mainMail(name, email, subject, message, client);
     console.log(result)
     res.send("Message Successfully Sent!");
   } catch (error) {
