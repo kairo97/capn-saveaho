@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+   min-height:fit-content;
+   max-height:330px;
     background-color:  #c9e4e7;
     border-radius: 15px;
     box-shadow: 5px 5px 45px black;

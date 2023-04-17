@@ -26,10 +26,10 @@ async function mainMail(name, email, subject, message) {
     subject: "scheduling",
     html: `You got a message from 
     Capn-Saveaho
-    job-type: ${name},
-    contact-info: ${subject},
-    ideal start date: ${email},
-    aviability: ${message}  `,
+    job-type: ${name},    
+    contact-info: ${subject},     
+    ideal start date: ${email},     
+    aviability: ${message}     `,
   };
   try {
     await transporter.sendMail(mailOption);
